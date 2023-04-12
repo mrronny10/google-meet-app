@@ -7,7 +7,7 @@ import {
   faVideoSlash,
   faMicrophoneSlash,
 } from "@fortawesome/free-solid-svg-icons";
-import { Tooltip } from 'react-tooltip';
+import {Tooltip as ReactTooltip}  from 'react-tooltip';
 import "./MeetingFooter.css";
 const MeetingFooter = (props) => {
   const [streamState, setStreamState] = useState({
@@ -78,7 +78,7 @@ const MeetingFooter = (props) => {
       >
         <FontAwesomeIcon icon={faDesktop} />
       </div>
-      <Tooltip />
+      <ReactTooltip />
     </div>
   );
 };
